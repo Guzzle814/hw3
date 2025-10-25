@@ -35,4 +35,11 @@ class Or2Gate : public Gate
       Event* update(uint64_t);
 };
 
+class NotGate : public Gate
+{
+    public://first time knowing that we don't need to actually name the variable in the declaration
+      NotGate(Wire*, Wire*);
+      Event* update(uint64_t);
+};
+
 #endif
